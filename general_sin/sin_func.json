@@ -1,0 +1,58 @@
+//[df-editor]:{"pos":[1532,1225],"collapsed":false}
+{
+  //[df-editor]:{"pos":[657,1202],"collapsed":false}
+  "type": "range_choice",
+  "min_inclusive": 0,
+  "max_exclusive": 3.141592,
+  "input": "terralith:general_sin/modulo/modulo", //[df-editor]:{"pos":[-1572,1282],"collapsed":true}
+  "when_in_range": {
+    //[df-editor]:{"pos":[150,700],"collapsed":false}
+    "type": "add",
+    "argument1": {
+      //[df-editor]:{"pos":[-100,625],"collapsed":false}
+      "type": "mul",
+      "argument1": -0.4057567, //[df-editor]:{"pos":[-380,550],"collapsed":true}
+      "argument2": {
+        //[df-editor]:{"pos":[-350,700],"collapsed":false}
+        "type": "square",
+        "argument": "terralith:general_sin/modulo/modulo" //[df-editor]:{"pos":[-1572,1282],"collapsed":true}
+      }
+    },
+    "argument2": {
+      //[df-editor]:{"pos":[-100,850],"collapsed":false}
+      "type": "mul",
+      "argument1": 1.27396654, //[df-editor]:{"pos":[-398,805],"collapsed":true}
+      "argument2": "terralith:general_sin/modulo/modulo" //[df-editor]:{"pos":[-1572,1282],"collapsed":true}
+    }
+  },
+  "when_out_of_range": {
+    //[df-editor]:{"pos":[-100,1600],"collapsed":false}
+    "type": "add",
+    "argument1": {
+      //[df-editor]:{"pos":[-350,1450],"collapsed":false}
+      "type": "mul",
+      "argument1": -0.4057567, //[df-editor]:{"pos":[-594,1325],"collapsed":true}
+      "argument2": {
+        //[df-editor]:{"pos":[-607,1524],"collapsed":false}
+        "type": "square",
+        "argument": {
+          //[df-editor]:{"pos":[-850,1525],"collapsed":false}
+          "type": "add",
+          "argument1": -3.141592, //[df-editor]:{"pos":[-1100,1450],"collapsed":true}
+          "argument2": "terralith:general_sin/modulo/modulo" //[df-editor]:{"pos":[-1572,1282],"collapsed":true}
+        }
+      }
+    },
+    "argument2": {
+      //[df-editor]:{"pos":[-350,1825],"collapsed":false}
+      "type": "mul",
+      "argument1": -1.27396654, //[df-editor]:{"pos":[-600,1750],"collapsed":true}
+      "argument2": {
+        //[df-editor]:{"pos":[-600,1900],"collapsed":false}
+        "type": "add",
+        "argument1": -3.141592, //[df-editor]:{"pos":[-850,1900],"collapsed":true}
+        "argument2": "terralith:general_sin/modulo/modulo" //[df-editor]:{"pos":[-1572,1282],"collapsed":true}
+      }
+    }
+  }
+}

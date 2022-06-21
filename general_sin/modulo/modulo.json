@@ -1,0 +1,86 @@
+//[df-editor]:{"pos":[900,1250],"collapsed":false}
+{
+  //[df-editor]:{"pos":[650,1375],"collapsed":false}
+  "type": "min",
+  "argument1": {
+    //[df-editor]:{"pos":[400,1300],"collapsed":false}
+    "type": "max",
+    "argument1": {
+      //[df-editor]:{"pos":[150,1225],"collapsed":false}
+      "type": "flat_cache",
+      "argument": {
+        //[df-editor]:{"pos":[-100,1225],"collapsed":false}
+        "type": "mul",
+        "argument1": {
+          //[df-editor]:{"pos":[-350,1150],"collapsed":false}
+          "type": "add",
+          "argument1": {
+            //[df-editor]:{"pos":[-600,475],"collapsed":false}
+            "type": "mul",
+            "argument1": 0.15915494309, //[df-editor]:{"pos":[-850,400],"collapsed":true}
+            "argument2": "terralith:dune/noise" //[df-editor]:{"pos":[-850,550],"collapsed":true}
+          },
+          "argument2": {
+            //[df-editor]:{"pos":[-600,1300],"collapsed":false}
+            "type": "mul",
+            "argument1": {
+              //[df-editor]:{"pos":[-850,1225],"collapsed":false}
+              "type": "mul",
+              "argument1": {
+                //[df-editor]:{"pos":[-1100,925],"collapsed":false}
+                "type": "mul",
+                "argument1": 2, //[df-editor]:{"pos":[-1350,700],"collapsed":true}
+                "argument2": {
+                  //[df-editor]:{"pos":[-1350,1000],"collapsed":false}
+                  "type": "clamp",
+                  "min": -0.5,
+                  "max": 0.5,
+                  "input": {
+                    //[df-editor]:{"pos":[-1600,1000],"collapsed":false}
+                    "type": "add",
+                    "argument1": {
+                      //[df-editor]:{"pos":[-1850,925],"collapsed":false}
+                      "type": "mul",
+                      "argument1": "terralith:dune/noise", //[df-editor]:{"pos":[-2100,850],"collapsed":true}
+                      "argument2": 0.15915494309 //[df-editor]:{"pos":[-2100,1000],"collapsed":true}
+                    },
+                    "argument2": -0.5 //[df-editor]:{"pos":[-1850,1150],"collapsed":true}
+                  }
+                }
+              },
+              "argument2": {
+                //[df-editor]:{"pos":[-1100,1525],"collapsed":false}
+                "type": "add",
+                "argument1": "terralith:general_sin/modulo/neg", //[df-editor]:{"pos":[-1350,1300],"collapsed":true}
+                "argument2": {
+                  //[df-editor]:{"pos":[-1350,1600],"collapsed":false}
+                  "type": "add",
+                  "argument1": "terralith:general_sin/modulo/pos", //[df-editor]:{"pos":[-1600,1450],"collapsed":true}
+                  "argument2": {
+                    //[df-editor]:{"pos":[-1600,1675],"collapsed":false}
+                    "type": "abs",
+                    "argument": {
+                      //[df-editor]:{"pos":[-1850,1675],"collapsed":false}
+                      "type": "add",
+                      "argument1": -0.5, //[df-editor]:{"pos":[-2100,1600],"collapsed":true}
+                      "argument2": {
+                        //[df-editor]:{"pos":[-2100,1750],"collapsed":false}
+                        "type": "mul",
+                        "argument1": "terralith:dune/noise", //[df-editor]:{"pos":[-2100,850],"collapsed":true}
+                        "argument2": 0.15915494309 //[df-editor]:{"pos":[-2350,1750],"collapsed":true}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "argument2": -1 //[df-editor]:{"pos":[-850,1900],"collapsed":true}
+          }
+        },
+        "argument2": 6.28318530718 //[df-editor]:{"pos":[-350,2050],"collapsed":true}
+      }
+    },
+    "argument2": 0 //[df-editor]:{"pos":[150,2200],"collapsed":true}
+  },
+  "argument2": 10 //[df-editor]:{"pos":[400,2350],"collapsed":true}
+}

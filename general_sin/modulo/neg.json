@@ -1,0 +1,11 @@
+//[df-editor]:{"pos":[900,350],"collapsed":false}
+{
+  //[df-editor]:{"pos":[650,475],"collapsed":false}
+  "type": "flat_cache",
+  "argument": {
+    //[df-editor]:{"pos":[400,475],"collapsed":false}
+    "type": "mul",
+    "argument1": -1, //[df-editor]:{"pos":[150,400],"collapsed":true}
+    "argument2": "terralith:general_sin/modulo/pos" //[df-editor]:{"pos":[120,564],"collapsed":false}
+  }
+}
